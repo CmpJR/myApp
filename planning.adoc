@@ -1,0 +1,43 @@
+
+*|  App  |*
+|>  Height                              : uint16
+    Width                               : uint16
+    Theme                               : *Theme
+    activities                          : map[string] *Activity
+    ActiveActivity                      : string
+
+|>  NewActivity(<name>)
+    GetActivity(<name>) *Acrivity
+    ChangeActivity(<name>)
+    ---
+    ReSize(<height>, <width>)
+    ---
+    Run()
+
+
+
+*|  Activity  |*
+|>  bufferLayouts                       : [] Layout
+
+|>  HandleClick(<x>, <y>)
+
+
+
+*|  Layout  |*
+|>  
+|>  
+
+
+
+*|  Theme  |*
+|>  
+|>  
+
+
+
+_[  Handle click event  ]_
+Activity.HandleClick(x, y) ->
+Layout.HandleClick(x, y) ->
+Element.Clicked(x, y) ->
+Element.OnClick(e *Element)
+
